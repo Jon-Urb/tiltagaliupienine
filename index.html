@@ -59,13 +59,14 @@
             <!-- Meniu kompiuteriams -->
             <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
                 <a href="#apie" class="hover:text-brick transition">Apie pieninę</a>
-                <a href="#ziniasklaida" class="hover:text-brick transition text-brick font-semibold">Spauda ir atgarsiai</a>
+                <a href="#ziniasklaida" class="hover:text-brick transition text-brick font-semibold">LRT reportažas</a>
                 <a href="#istorija" class="hover:text-brick transition">Istorija</a>
                 <a href="#architektura" class="hover:text-brick transition">Architektūra</a>
                 <a href="#video" class="hover:text-brick transition flex items-center gap-1.5 text-brick">
                     <span>▶</span> Apybraiža
                 </a>
                 <a href="#galerija" class="hover:text-brick transition font-semibold">Archyvo nuotraukos</a>
+                <a href="#spauda-pabaiga" class="hover:text-brick transition font-semibold">Spauda</a>
                 <a href="#kontaktai" class="px-5 py-2.5 bg-brick text-white rounded-full hover:bg-brick-dark transition shadow-sm">Kontaktai</a>
             </nav>
 
@@ -81,11 +82,12 @@
         <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-6 bg-cream border-b border-cream-dark">
             <div class="flex flex-col gap-3 font-medium text-sm">
                 <a href="#apie" class="py-2 hover:text-brick">Apie pieninę</a>
-                <a href="#ziniasklaida" class="py-2 text-brick font-semibold">Spauda (LRT, Kauno diena, Sekundė)</a>
+                <a href="#ziniasklaida" class="py-2 text-brick font-semibold">LRT reportažas</a>
                 <a href="#istorija" class="py-2 hover:text-brick">Istorija</a>
                 <a href="#architektura" class="py-2 hover:text-brick">Architektūra</a>
                 <a href="#video" class="py-2 text-brick font-semibold">▶ Dokumentinė apybraiža</a>
                 <a href="#galerija" class="py-2 hover:text-brick font-semibold">Archyvo nuotraukos</a>
+                <a href="#spauda-pabaiga" class="py-2 text-brick font-semibold">Papildoma spauda</a>
                 <a href="#kontaktai" class="py-2 text-brick font-semibold">Kontaktai ir vieta</a>
             </div>
         </div>
@@ -161,89 +163,40 @@
         </div>
     </section>
 
-    <!-- Žiniasklaida: LRT, Kauno diena ir Sekundė -->
+    <!-- Istorija spaudoje: LRT reportažas (originali vieta) -->
     <section id="ziniasklaida" class="py-20 bg-cream-dark/40 border-y border-cream-dark">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-brick font-semibold text-xs uppercase tracking-widest">Istorija spaudoje</span>
                 <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-4">Pieninės atgimimas žiniasklaidoje</h2>
                 <p class="text-charcoal/75">
-                    Nacionaliniuose ir regioniniuose leidiniuose aprašytas istorinis lūžis, prof. A. Bumblausko paraginimas ir unikalus paveldo išsaugojimo kelias.
+                    Nacionalinio transliuotojo LRT reportažas apie istorinį lūžį, prof. A. Bumblausko paraginimą ir paveldo išsaugojimo kelią.
                 </p>
             </div>
 
-            <div class="grid lg:grid-cols-3 gap-8 items-stretch">
-                <!-- LRT kortelė -->
-                <div class="bg-white rounded-3xl p-8 shadow-md border border-cream-dark flex flex-col justify-between">
-                    <div>
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brick/10 text-brick text-xs font-bold uppercase tracking-wider mb-4">
-                            <span>LRT.lt</span>
-                        </div>
-                        <h3 class="font-serif text-xl font-bold mb-3 text-charcoal">
-                            Po Bumblausko paraginimo – kauniečio idėja: ėmėsi atkurti istorinę Lietuvos pieninę
-                        </h3>
-                        <blockquote class="border-l-4 border-brick pl-3 italic text-charcoal/80 my-3 text-xs leading-relaxed">
-                            „Jeigu mes norime didžiuotis kuo nors, tai mielieji, pasisukiokite aplink, įsilipkite į aulinius batus ir susiraskite pieninę.“
-                            <span class="block mt-1 not-italic font-semibold text-[11px] text-brick">— Prof. Alfredas Bumblauskas</span>
-                        </blockquote>
-                        <p class="text-charcoal/80 text-xs leading-relaxed mb-6">
-                            Profesoriaus A. Bumblausko raginimas prieš Lietuvos šimtmetį surasti ir atkurti bent vieną pieninę tapo lemiamu postūmiu Gintarui Urbonui ryžtis atgaivinti šį apleistą mūrinį pastatą.
-                        </p>
+            <!-- LRT kortelė (tekstas nepakeistas) -->
+            <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-lg border border-cream-dark flex flex-col justify-between">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brick/10 text-brick text-xs font-bold uppercase tracking-wider mb-4">
+                        <span>LRT.lt</span>
                     </div>
-                    <div>
-                        <a href="https://www.lrt.lt/naujienos/lietuvoje/2/1691659/po-bumblausko-paraginimo-kauniecio-ideja-emesi-atkurti-istorine-lietuvos-pienine" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brick text-white rounded-full font-semibold text-xs uppercase tracking-wider hover:bg-brick-dark transition shadow-sm">
-                            <span>Skaityti LRT</span>
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        </a>
-                    </div>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-bold mb-4 text-charcoal leading-snug">
+                        Po Bumblausko paraginimo – kauniečio idėja: ėmėsi atkurti istorinę Lietuvos pieninę
+                    </h3>
+                    <blockquote class="border-l-4 border-brick pl-4 italic text-charcoal/85 my-5 text-sm sm:text-base leading-relaxed bg-cream/40 py-2 rounded-r-xl">
+                        „Jeigu mes norime didžiuotis kuo nors, tai mielieji, pasisukiokite aplink, įsilipkite į aulinius batus ir susiraskite pieninę.“
+                        <span class="block mt-1.5 not-italic font-semibold text-xs text-brick">— Prof. Alfredas Bumblauskas</span>
+                    </blockquote>
+                    <p class="text-charcoal/80 text-sm sm:text-base leading-relaxed mb-6">
+                        Profesoriaus A. Bumblausko raginimas prieš Lietuvos šimtmetį surasti ir atkurti bent vieną pieninę tapo lemiamu postūmiu Gintarui Urbonui ryžtis atgaivinti šį apleistą mūrinį pastatą.
+                    </p>
                 </div>
-
-                <!-- Kauno diena kortelė -->
-                <div class="bg-white rounded-3xl p-8 shadow-md border border-cream-dark flex flex-col justify-between">
-                    <div>
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-charcoal/10 text-charcoal text-xs font-bold uppercase tracking-wider mb-4">
-                            <span>Kauno diena</span>
-                        </div>
-                        <h3 class="font-serif text-xl font-bold mb-3 text-charcoal">
-                            Kaunietis atstatė tarpukario pieninę
-                        </h3>
-                        <p class="text-charcoal/80 text-xs leading-relaxed mb-4">
-                            Straipsnyje pasakojama apie didžiulį darbą, kurį atliko kaunietis verslininkas Gintaras Urbonas. Pastatas buvo avarinės būklės – be stogo, su išdaužytais langais ir įgriuvusiomis lubomis.
-                        </p>
-                        <p class="text-charcoal/80 text-xs leading-relaxed mb-6">
-                            Kaimo žmonės patys ėmė nešti senas nuotraukas, „Pienocentro“ čekius, sąskaitas ir atsiminimus, kurie šiandien sudaro pieninės muziejinį archyvą.
-                        </p>
-                    </div>
-                    <div>
-                        <a href="https://kauno.diena.lt/naujienos/kaunas/miesto-pulsas/kaunietis-atstate-tarpukario-pienine-1024522" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-charcoal text-cream rounded-full font-semibold text-xs uppercase tracking-wider hover:bg-black transition shadow-sm">
-                            <span>Skaityti Kauno dieną</span>
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Sekundė kortelė -->
-                <div class="bg-white rounded-3xl p-8 shadow-md border border-cream-dark flex flex-col justify-between">
-                    <div>
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brick/10 text-brick text-xs font-bold uppercase tracking-wider mb-4">
-                            <span>Sekundė.lt</span>
-                        </div>
-                        <h3 class="font-serif text-xl font-bold mb-3 text-charcoal">
-                            Kaimo skaudulys tapo garsenybe
-                        </h3>
-                        <p class="text-charcoal/80 text-xs leading-relaxed mb-4">
-                            Panevėžio dienraščio „Sekundė“ publikacija pasakoja apie neįtikėtiną pastato metamorfozę: dešimtmečius Tiltagalių gyventojų akis badęs apleistas pastatas virto krašto pažiba ir kultūros paveldo pavyzdžiu.
-                        </p>
-                        <p class="text-charcoal/80 text-xs leading-relaxed mb-6">
-                            Straipsnyje atskleidžiamas pastato atgimimo kelias bei vietos bendruomenės džiaugsmas atgimusiu tarpukario architektūros paminklu.
-                        </p>
-                    </div>
-                    <div>
-                        <a href="https://sekunde.lt/kaimo-skaudulys-tapo-garsenybe/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brick text-white rounded-full font-semibold text-xs uppercase tracking-wider hover:bg-brick-dark transition shadow-sm">
-                            <span>Skaityti „Sekundėje“</span>
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        </a>
-                    </div>
+                <div class="pt-4 border-t border-cream-dark/60 flex items-center justify-between flex-wrap gap-4">
+                    <span class="text-xs text-charcoal/60">Plačiau skaitykite LRT naujienų portale</span>
+                    <a href="https://www.lrt.lt/naujienos/lietuvoje/2/1691659/po-bumblausko-paraginimo-kauniecio-ideja-emesi-atkurti-istorine-lietuvos-pienine" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-brick text-white rounded-full font-semibold text-xs uppercase tracking-wider hover:bg-brick-dark transition shadow-sm">
+                        <span>Skaityti LRT straipsnį</span>
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -267,7 +220,7 @@
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cream bg-brick text-white font-bold text-xs shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                         1
                     </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-2xl shadow-sm border border-cream-dark">
+                    <div class="w-[calc(100%-4rem)\] md:w-[calc(50%-2.5rem)\] bg-white p-6 rounded-2xl shadow-sm border border-cream-dark">
                         <span class="text-xs font-bold text-brick uppercase">Iki 1936 m.</span>
                         <h3 class="font-serif text-xl font-bold mt-1 mb-2">Pirmosios pieninės ir ežero ledai</h3>
                         <p class="text-sm text-charcoal/80 leading-relaxed">
@@ -281,7 +234,7 @@
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cream bg-brick text-white font-bold text-xs shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                         2
                     </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-2xl shadow-sm border border-cream-dark">
+                    <div class="w-[calc(100%-4rem)\] md:w-[calc(50%-2.5rem)\] bg-white p-6 rounded-2xl shadow-sm border border-cream-dark">
                         <span class="text-xs font-bold text-brick uppercase">1936 m. lapkričio 21 d. – 1937 m.</span>
                         <h3 class="font-serif text-xl font-bold mt-1 mb-2">„Galybės“ bendrovės nutarimas</h3>
                         <p class="text-sm text-charcoal/80 leading-relaxed mb-4">
@@ -299,7 +252,7 @@
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cream bg-brick text-white font-bold text-xs shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                         3
                     </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-2xl shadow-sm border border-cream-dark">
+                    <div class="w-[calc(100%-4rem)\] md:w-[calc(50%-2.5rem)\] bg-white p-6 rounded-2xl shadow-sm border border-cream-dark">
                         <span class="text-xs font-bold text-brick uppercase">1937–1938 m.</span>
                         <h3 class="font-serif text-xl font-bold mt-1 mb-2">B. Elzbergo projektas ir gręžinys</h3>
                         <p class="text-sm text-charcoal/80 leading-relaxed mb-4">
@@ -317,7 +270,7 @@
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cream bg-brick text-white font-bold text-xs shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                         4
                     </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-2xl shadow-sm border border-cream-dark">
+                    <div class="w-[calc(100%-4rem)\] md:w-[calc(50%-2.5rem)\] bg-white p-6 rounded-2xl shadow-sm border border-cream-dark">
                         <span class="text-xs font-bold text-brick uppercase">1938 m. spalis – 1940 m. rugpjūčio 1 d.</span>
                         <h3 class="font-serif text-xl font-bold mt-1 mb-2">Rangos konkursai ir statybos</h3>
                         <p class="text-sm text-charcoal/80 leading-relaxed mb-4">
@@ -340,7 +293,7 @@
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cream bg-brick text-white font-bold text-xs shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                         5
                     </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-2xl shadow-sm border border-cream-dark">
+                    <div class="w-[calc(100%-4rem)\] md:w-[calc(50%-2.5rem)\] bg-white p-6 rounded-2xl shadow-sm border border-cream-dark">
                         <span class="text-xs font-bold text-brick uppercase">2000 m.</span>
                         <h3 class="font-serif text-xl font-bold mt-1 mb-2">Gamybinės veiklos pabaiga</h3>
                         <p class="text-sm text-charcoal/80 leading-relaxed mb-4">
@@ -358,7 +311,7 @@
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cream bg-brick text-white font-bold text-xs shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                         6
                     </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-2xl shadow-sm border border-cream-dark">
+                    <div class="w-[calc(100%-4rem)\] md:w-[calc(50%-2.5rem)\] bg-white p-6 rounded-2xl shadow-sm border border-cream-dark">
                         <span class="text-xs font-bold text-brick uppercase">Dabartis</span>
                         <h3 class="font-serif text-xl font-bold mt-1 mb-2">Atstatymas ir atminties išsaugojimas</h3>
                         <p class="text-sm text-charcoal/80 leading-relaxed mb-4">
@@ -574,6 +527,69 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Žiniasklaida: Kauno diena ir Sekundė (perkelta į pabaigą) -->
+    <section id="spauda-pabaiga" class="py-20 bg-cream-dark/40 border-y border-cream-dark">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brick font-semibold text-xs uppercase tracking-widest">Atgarsiai spaudoje</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-4">Tiltagalių pieninė leidiniuose</h2>
+                <p class="text-charcoal/75">
+                    Kauno ir Panevėžio krašto dienraščių publikacijos apie pastato gelbėjimo kelią, bendruomenės atmintį ir apleisto skaudulio virsmą paveldo pavyzdžiu.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto">
+                <!-- Kauno diena kortelė -->
+                <div class="bg-white rounded-3xl p-8 shadow-md border border-cream-dark flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-charcoal/10 text-charcoal text-xs font-bold uppercase tracking-wider mb-4">
+                            <span>Kauno diena</span>
+                        </div>
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold mb-3 text-charcoal">
+                            Kaunietis atstatė tarpukario pieninę
+                        </h3>
+                        <p class="text-charcoal/80 text-sm leading-relaxed mb-4">
+                            Straipsnyje pasakojama apie didžiulį darbą, kurį atliko kaunietis verslininkas Gintaras Urbonas. Pastatas buvo avarinės būklės – be stogo, su išdaužytais langais ir įgriuvusiomis lubomis.
+                        </p>
+                        <p class="text-charcoal/80 text-sm leading-relaxed mb-6">
+                            Kaimo žmonės patys ėmė nešti senas nuotraukas, „Pienocentro“ čekius, sąskaitas ir atsiminimus, kurie šiandien sudaro pieninės muziejinį archyvą.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="https://kauno.diena.lt/naujienos/kaunas/miesto-pulsas/kaunietis-atstate-tarpukario-pienine-1024522" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-charcoal text-cream rounded-full font-semibold text-xs uppercase tracking-wider hover:bg-black transition shadow-sm">
+                            <span>Skaityti Kauno dieną</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sekundė kortelė -->
+                <div class="bg-white rounded-3xl p-8 shadow-md border border-cream-dark flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brick/10 text-brick text-xs font-bold uppercase tracking-wider mb-4">
+                            <span>Sekundė.lt</span>
+                        </div>
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold mb-3 text-charcoal">
+                            Kaimo skaudulys tapo garsenybe
+                        </h3>
+                        <p class="text-charcoal/80 text-sm leading-relaxed mb-4">
+                            Panevėžio dienraščio „Sekundė“ publikacija pasakoja apie neįtikėtiną pastato metamorfozę: dešimtmečius Tiltagalių gyventojų akis badęs apleistas pastatas virto krašto pažiba ir kultūros paveldo pavyzdžiu.
+                        </p>
+                        <p class="text-charcoal/80 text-sm leading-relaxed mb-6">
+                            Straipsnyje atskleidžiamas pastato atgimimo kelias bei vietos bendruomenės džiaugsmas atgimusiu tarpukario architektūros paminklu.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="https://sekunde.lt/kaimo-skaudulys-tapo-garsenybe/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brick text-white rounded-full font-semibold text-xs uppercase tracking-wider hover:bg-brick-dark transition shadow-sm">
+                            <span>Skaityti „Sekundėje“</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
