@@ -57,13 +57,13 @@
             <!-- Meniu kompiuteriams -->
             <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
                 <a href="#apie" class="hover:text-brick transition">Apie pieninę</a>
-                <a href="#bumblauskas" class="hover:text-brick transition text-brick font-semibold">Apie idėją ir LRT</a>
+                <a href="#bumblauskas" class="hover:text-brick transition text-brick font-semibold">Idėja ir LRT</a>
                 <a href="#istorija" class="hover:text-brick transition">Istorija</a>
                 <a href="#architektura" class="hover:text-brick transition">Architektūra</a>
                 <a href="#video" class="hover:text-brick transition flex items-center gap-1.5 text-brick">
                     <span>▶</span> Apybraiža
                 </a>
-                <a href="#galerija" class="hover:text-brick transition">Nuotraukos</a>
+                <a href="#galerija" class="hover:text-brick transition font-semibold">Nuotraukų archyvas</a>
                 <a href="#kontaktai" class="px-5 py-2.5 bg-brick text-white rounded-full hover:bg-brick-dark transition shadow-sm">Kontaktai</a>
             </nav>
 
@@ -79,11 +79,11 @@
         <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-6 bg-cream border-b border-cream-dark">
             <div class="flex flex-col gap-3 font-medium text-sm">
                 <a href="#apie" class="py-2 hover:text-brick">Apie pieninę</a>
-                <a href="#bumblauskas" class="py-2 text-brick font-semibold">Apie idėją ir LRT reportažą</a>
+                <a href="#bumblauskas" class="py-2 text-brick font-semibold">Idėja ir LRT reportažas</a>
                 <a href="#istorija" class="py-2 hover:text-brick">Istorija</a>
                 <a href="#architektura" class="py-2 hover:text-brick">Architektūra</a>
                 <a href="#video" class="py-2 text-brick font-semibold">▶ Dokumentinė apybraiža</a>
-                <a href="#galerija" class="py-2 hover:text-brick">Archyvas ir nuotraukos</a>
+                <a href="#galerija" class="py-2 hover:text-brick font-semibold">Nuotraukų archyvas</a>
                 <a href="#kontaktai" class="py-2 text-brick font-semibold">Kontaktai ir vieta</a>
             </div>
         </div>
@@ -106,9 +106,9 @@
                     <a href="#istorija" class="px-8 py-4 bg-brick text-white font-semibold rounded-full hover:bg-brick-dark transition shadow-lg shadow-brick/20">
                         Tyrinėti istoriją
                     </a>
-                    <a href="#bumblauskas" class="px-8 py-4 bg-white text-charcoal font-semibold rounded-full border border-charcoal/15 hover:border-brick hover:text-brick transition flex items-center gap-2">
-                        <span>LRT reportažas</span>
-                        <span class="text-xs">↗</span>
+                    <a href="#galerija" class="px-8 py-4 bg-white text-charcoal font-semibold rounded-full border border-charcoal/15 hover:border-brick hover:text-brick transition flex items-center gap-2">
+                        <span>Archyvo nuotraukos</span>
+                        <span class="text-xs">↓</span>
                     </a>
                 </div>
             </div>
@@ -147,7 +147,7 @@
 
                 <div class="md:col-span-5">
                     <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-cream-dark group">
-                        <img src="images/fasadas-plytos.jpg" alt="Tiltagalių pieninės raudonų plytų fasadas ir arkiniai langai" class="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80';">
+                        <img src="images/IMG_0984.JPG" alt="Tiltagalių pieninės raudonų plytų fasadas" class="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='images/fasadas-plytos.jpg';">
                         <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-transparent to-transparent flex items-end p-6">
                             <div class="text-white">
                                 <span class="text-xs uppercase tracking-wider text-brick-light font-bold block">Autentiška architektūra</span>
@@ -375,90 +375,164 @@
         </div>
     </section>
 
-    <!-- Išplėstinė archyvinių nuotraukų galerija -->
+    <!-- PILNA NUOTRAUKŲ GALERIJA (Iš „nuotraukos www“ aplanko) -->
     <section id="galerija" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-brick font-semibold text-xs uppercase tracking-widest">Archyvas ir fotofiksacija</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-4">Autentiški kadrai, brėžiniai ir atstatymas</h2>
+                <span class="text-brick font-semibold text-xs uppercase tracking-widest">Fotofiksacija ir archyvas</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-4">Tiltagalių pieninės vaizdų galerija</h2>
                 <p class="text-charcoal/75">
-                    Originalūs archyvo dokumentai bei atkurtos Tiltagalių pieninės architektūrinės erdvės iš saugyklos fondo.
+                    Originalūs 1937–1939 m. „Pienocentro“ dokumentai, archyviniai brėžiniai, autentiškos mūro detalės bei pastato atstatymo etapai.
                 </p>
             </div>
 
-            <!-- 6 nuotraukų tinklelis -->
+            <!-- 12 nuotraukų tinklelis -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- 1 nuotrauka: Brėžiniai -->
+
+                <!-- 1 nuotrauka: Brėžinys -->
                 <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark shadow-sm group">
                     <div class="h-64 overflow-hidden bg-cream-dark/40 relative">
-                        <img src="images/projektas-1937.jpg" alt="1937 m. architekto B. Elzbergo brėžiniai" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80';">
-                        <span class="absolute top-3 left-3 bg-brick text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Archyvas</span>
+                        <img src="images/projektas-1937.jpg" alt="1937 m. architekto B. Elzbergo brėžiniai" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='images/Tiltagaliu galybe_siusti.jpg';">
+                        <span class="absolute top-3 left-3 bg-brick text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Projektas</span>
                     </div>
                     <div class="p-5">
-                        <h3 class="font-serif font-bold text-lg mb-1.5">1937 m. projektas Nr. 1036</h3>
-                        <p class="text-xs text-charcoal/70 leading-relaxed">Architekto B. Elzbergo ir inž. T. Prijalgausko originalus garinės pieninės techninis planas.</p>
+                        <h3 class="font-serif font-bold text-lg mb-1.5">Projektas Nr. 1036 (1937 m.)</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">Originalus architekto B. Elzbergo techninis brėžinys ir situacijos planas Tiltagalių pieninei.</p>
                     </div>
                 </div>
 
-                <!-- 2 nuotrauka: Fasadas -->
+                <!-- 2 nuotrauka: 1939 m. Pienocentro dokumentas -->
                 <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark shadow-sm group">
                     <div class="h-64 overflow-hidden bg-cream-dark/40 relative">
-                        <img src="images/fasadas-plytos.jpg" alt="Raudonų plytų fasadas ir arkiniai langai" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80';">
-                        <span class="absolute top-3 left-3 bg-charcoal text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Fasadas</span>
+                        <img src="images/IMG_9183.jpg" alt="1939 m. Pienocentro sąmata ir raštas bendrovei Galybė" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-brick text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Dokumentas</span>
                     </div>
                     <div class="p-5">
-                        <h3 class="font-serif font-bold text-lg mb-1.5">Raudonų plytų mūras</h3>
-                        <p class="text-xs text-charcoal/70 leading-relaxed">Išsaugota autentiška fasado geometrija su ritmiškai sumūrytais arkiniais langais.</p>
+                        <h3 class="font-serif font-bold text-lg mb-1.5">Pienocentro raštas (1939 m.)</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">Centralinės sąjungos oficialus raštas Tiltagalių „Galybei“ dėl pieninės šalkų įrengimo sąmatos.</p>
                     </div>
                 </div>
 
-                <!-- 3 nuotrauka: Vidaus erdvės -->
+                <!-- 3 nuotrauka: Fasadas -->
                 <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark shadow-sm group">
                     <div class="h-64 overflow-hidden bg-cream-dark/40 relative">
-                        <img src="images/erdves-vidus.jpg" alt="Tiltagalių pieninės vidaus erdvės" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?auto=format&fit=crop&w=800&q=80';">
-                        <span class="absolute top-3 left-3 bg-brick text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Vidus</span>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="font-serif font-bold text-lg mb-1.5">Vidaus erdvės</h3>
-                        <p class="text-xs text-charcoal/70 leading-relaxed">Šviesios, erdvios patalpos su aukštomis lubomis, paruoštos istorinei atminties ekspozicijai.</p>
-                    </div>
-                </div>
-
-                <!-- 4 nuotrauka: Mūro arka -->
-                <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark shadow-sm group">
-                    <div class="h-64 overflow-hidden bg-cream-dark/40 relative">
-                        <img src="images/detales-arka.jpg" alt="Mūro arkos ir langų apvadai" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=800&q=80';">
+                        <img src="images/IMG_20201217_0002.jpg" alt="Raudonų plytų fasadas ir arkiniai langai" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='images/fasadas-plytos.jpg';">
                         <span class="absolute top-3 left-3 bg-charcoal text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Mūras</span>
                     </div>
                     <div class="p-5">
-                        <h3 class="font-serif font-bold text-lg mb-1.5">Skliauto ir arkų detalės</h3>
-                        <p class="text-xs text-charcoal/70 leading-relaxed">Tarpukario Lietuvos meistrų rankomis formuotas taisyklingo spindulio plytų lankas.</p>
+                        <h3 class="font-serif font-bold text-lg mb-1.5">Raudonų plytų fasadas</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">Išsaugota autentiška fasado geometrija su taisyklingais plytų skliautais.</p>
                     </div>
                 </div>
 
-                <!-- 5 nuotrauka: Atkūrimo darbai -->
+                <!-- 4 nuotrauka: Mūro arkinis langas -->
                 <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark shadow-sm group">
                     <div class="h-64 overflow-hidden bg-cream-dark/40 relative">
-                        <img src="images/atkurimas-procesas.jpg" alt="Tiltagalių pieninės atstatymo darbai" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80';">
+                        <img src="images/IMG_20201217_0005.jpg" alt="Mūro arkos ir langų apvadai" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='images/detales-arka.jpg';">
+                        <span class="absolute top-3 left-3 bg-charcoal text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Detalė</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg mb-1.5">Arkinis skliautas</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">Meistrų rankomis sumūrytas apskritas plytų lankas, būdingas B. Elzbergo braižui.</p>
+                    </div>
+                </div>
+
+                <!-- 5 nuotrauka: Vidaus patalpos -->
+                <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark shadow-sm group">
+                    <div class="h-64 overflow-hidden bg-cream-dark/40 relative">
+                        <img src="images/IMG_20201217_0003.jpg" alt="Vidaus salė su aukštomis lubomis" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-brick text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Vidus</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg mb-1.5">Pagrindinė salė</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">Erdvi gamybinė patalpa su plačiais langais, pro kuriuos patenka natūrali dienos šviesa.</p>
+                    </div>
+                </div>
+
+                <!-- 6 nuotrauka: Sienų ir skliautų konstrukcijos -->
+                <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark shadow-sm group">
+                    <div class="h-64 overflow-hidden bg-cream-dark/40 relative">
+                        <img src="images/IMG_20201217_0009.jpg" alt="Vidaus skliautai ir pertvaros" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-brick text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Konstrukcija</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg mb-1.5">Vidaus pertvaros ir arkos</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">Mūrinės vidaus sienos, atskyrusios pieno surinkimo, separavimo ir garo katilo patalpas.</p>
+                    </div>
+                </div>
+
+                <!-- 7 nuotrauka: Technologinės salės fragmentas -->
+                <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark shadow-sm group">
+                    <div class="h-64 overflow-hidden bg-cream-dark/40 relative">
+                        <img src="images/IMG_20201217_0010.jpg" alt="Patalpų perspektyva" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-brick text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Patalpos</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg mb-1.5">Technologinė erdvė</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">Patalpų išplanavimas, pritaikytas garo vamzdynų ir technologinių įrenginių montavimui.</p>
+                    </div>
+                </div>
+
+                <!-- 8 nuotrauka: Mūro sandara iš arti -->
+                <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark shadow-sm group">
+                    <div class="h-64 overflow-hidden bg-cream-dark/40 relative">
+                        <img src="images/IMG_20201217_0013.jpg" alt="Plytų mūro faktūra" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-charcoal text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Faktūra</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg mb-1.5">Autentiškos plytos</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">Tarpukario plytinėse degtos masyvios molio plytos, atlaikiusios daugiau nei 80 metų.</p>
+                    </div>
+                </div>
+
+                <!-- 9 nuotrauka: Konstrukcinis kampas -->
+                <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark shadow-sm group">
+                    <div class="h-64 overflow-hidden bg-cream-dark/40 relative">
+                        <img src="images/IMG_20201217_0015.jpg" alt="Mūro kampo rišimas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-charcoal text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Inžinerija</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg mb-1.5">Kampų sutvirtinimai</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">Taisyklinga kampinė plytų rišimo technika, užtikrinusi pramoninio pastato ilgaamžiškumą.</p>
+                    </div>
+                </div>
+
+                <!-- 10 nuotrauka: Atstatymo procesas -->
+                <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark shadow-sm group">
+                    <div class="h-64 overflow-hidden bg-cream-dark/40 relative">
+                        <img src="images/IMG_4425.jpg" alt="Pastato atstatymo darbai" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <span class="absolute top-3 left-3 bg-brick text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Atstatymas</span>
                     </div>
                     <div class="p-5">
-                        <h3 class="font-serif font-bold text-lg mb-1.5">Pastato prikėlimas</h3>
-                        <p class="text-xs text-charcoal/70 leading-relaxed">Išsaugoti originalūs pamatai, atkurta stogo danga ir sutvirtintos išorinės sienos.</p>
+                        <h3 class="font-serif font-bold text-lg mb-1.5">Restauravimo pradžia</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">Sudėtingas pastato gelbėjimo etapas: išvalytos erdvės, sutvarkytos ir apsaugotos sienos.</p>
                     </div>
                 </div>
 
-                <!-- 6 nuotrauka: Kraštovaizdis prie Marnakos -->
+                <!-- 11 nuotrauka: Atkurtas fasadas šiandien -->
                 <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark shadow-sm group">
                     <div class="h-64 overflow-hidden bg-cream-dark/40 relative">
-                        <img src="images/aplinka-marnaka.jpg" alt="Pieninės aplinka šalia Marnakos upelio" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80';">
-                        <span class="absolute top-3 left-3 bg-charcoal text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Aplinka</span>
+                        <img src="images/IMG_0984.JPG" alt="Atkurtas Tiltagalių pieninės pastatas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-charcoal text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Dabartis</span>
                     </div>
                     <div class="p-5">
-                        <h3 class="font-serif font-bold text-lg mb-1.5">Vieta prie Marnakos</h3>
-                        <p class="text-xs text-charcoal/70 leading-relaxed">Pieninės teritorija Tiltagalių kaime, strategiškai parinkta dar 1937 m. gegužę.</p>
+                        <h3 class="font-serif font-bold text-lg mb-1.5">Atgimusi pieninė</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">Šiuolaikinis sutvarkyto pastato vaizdas – išsaugotas istorinis siluetas ir tūris.</p>
                     </div>
                 </div>
+
+                <!-- 12 nuotrauka: Fasadų perspektyva -->
+                <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark shadow-sm group">
+                    <div class="h-64 overflow-hidden bg-cream-dark/40 relative">
+                        <img src="images/IMG_0335.JPG" alt="Tiltagalių pieninė aplinkos kontekste" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-charcoal text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-md">Panorama</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg mb-1.5">Pastatas ir aplinka</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">Pieninė Tiltagalių kaimo kraštovaizdyje prie Žaliosios gatvės.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
