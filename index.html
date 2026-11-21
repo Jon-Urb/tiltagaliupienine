@@ -253,15 +253,68 @@
         </div>
     </section>
 
-    <!-- Istorinė laiko juosta su integruotomis nuotraukomis -->
+    <!-- Istorinė laiko juosta su integruotomis nuotraukomis ir išsamia istorija -->
     <section id="istorija" class="py-20 bg-cream">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="text-brick font-semibold text-xs uppercase tracking-widest">Archyvinė kronika</span>
                 <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-4">Tiltagalių pieninės istorijos raida</h2>
-                <p class="text-charcoal/75">
+                <p class="text-charcoal/75 mb-6">
                     Istorinis kelias nuo kaimo pradžios medinių trobesių ir ledo saugyklų iki modernios garinės pieninės statybos, veiklos pabaigos ir atgimimo.
                 </p>
+                <!-- Mygtukas platesnei istorijai pasiskaityti -->
+                <button id="toggle-full-history-btn" class="inline-flex items-center gap-2 px-6 py-3 bg-brick text-white font-semibold rounded-full hover:bg-brick-dark transition shadow-md text-sm">
+                    <span id="toggle-btn-text">Skaityti išsamią istoriją</span>
+                    <svg id="toggle-btn-icon" class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Išsami istorija (išskleidžiamas blokas) -->
+            <div id="full-history-content" class="hidden mb-16 bg-white rounded-3xl p-8 sm:p-12 shadow-lg border border-cream-dark transition-all duration-500">
+                <div class="border-b border-cream-dark pb-6 mb-6">
+                    <span class="text-xs font-bold text-brick uppercase tracking-wider">Archyvinis pasakojimas</span>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-bold mt-1 text-charcoal">Tiltagalių pieninė</h3>
+                </div>
+                <div class="prose prose-stone max-w-none text-charcoal/85 space-y-4 leading-relaxed text-sm sm:text-base">
+                    <p>
+                        Pirmoji pieninė Tiltagalių apylinkėse buvo Kiaulėno dvare, Paežeriuose. Antroji, medinė, buvo kaimo pradžioje, prie sankryžos.
+                    </p>
+                    <p>
+                        Tada 1936 m. lapkričio 21 d. Tiltagalių pieno perdirbimo bendrovės „Galybės“ visuotinis narių susirinkimas ir valdybos nariai Vincas Breivė, Povilas Balčikonis, Jonas Meiliūnas nutarė statyti garinę pieninę.
+                    </p>
+                    <p>
+                        Viskas prasidėjo nuo vietos parinkimo. Buvo svarstomi du variantai: statyti garinę pieninę senoje vietoje, kaimo pradžioje, ar ieškotis naujos vietos. Vis dėlto buvo nuspręsta statyti pieninę šioje vietoje dėl dviejų priežasčių: patogesnis kanalizacijos įrengimas – ne paslaptis, kad kanalizacija buvo nuvedama į šalia tekantį upelį Marnaką, kuris pasak gyventojų būdavo baltas. Ir kita priežastis, kad vienas gyventojas užprotestavo dėl kanalizacijos įrengimo jo žemėje.
+                    </p>
+                    <p>
+                        Todėl 1937 m. gegužės 15 d. buvo sudaryta žemės išpirkimo sutartis iš Antano Morkūno už 1 500 Lt. Bauda 3 000 Lt.
+                    </p>
+                    <p>
+                        Prasidėjo garinės pieninės projekto derinimas. Tuo metu pieninės buvo statomos pagal Centralinės Lietuvos pieno perdirbimo bendrovių sąjungos „Pienocentras“ pasamdytų architektų paruoštus projektus. Tiltagaliams buvo pasiūlyti du projektai – vienas projektas Nr. 1036 – 75 000 Lt, kitas – Nr. 1038 – 105 000 Lt. Buvo pasirinktas pirmasis architekto Broniaus Elzbergo ir inžinieriaus Telesforo Prijalgausko projektas.
+                    </p>
+                    <p>
+                        Kaip matyti, pieninė turi vokiečių ir belgų architektūrai būdingų bruožų. Visų pirma raudonos plytos, taip pat iš ratu sumūrytų plytų langų. Ne veltui, nes architektas Elzbergas architektūros mokėsi Belgijoje, o vėliau kaip jauną specialistą pasamdė „Pienocentras“.
+                    </p>
+                    <p>
+                        Tiesą sakant, Elzbergas parengė nemažai panašių tipinių pieninių projektų. Tokių kaip Buginių, Lūšių pieninės.
+                    </p>
+                    <p>
+                        Kadangi pieno produktams gaminti reikia šviežio vandens, visų pirma buvo iškastas 32 m artezinis šulinys.
+                    </p>
+                    <p>
+                        Vėliau, 1938 m. spalio 19 d. buvo paskelbtas pirmas konkursas statyti pieninei. Jonas Morkūnas ir Klemas Čepas pasisiūlė pastatyti pieninę už 89 000 Litų, tačiau kadangi buvo gautas tik vienas pasiūlymas ir dviem tūkstančiais didesnis nei patvirtinta sąmata, buvo skelbiamas antras konkursas, kuris įvyko po trijų savaičių (1938-11-08). Jame jau buvo gauti trys pasiūlymai ir laimėjo Petras Čekavičius, kuris įsipareigojo pieninę pastatyti už 83 000 Lt iki 1939 m. rugsėjo 1 d. Na, kaip ir šiais laikais dažnu atveju, statybos užsitęsė, išbrango ir buvo baigtos tik 1940 m. rugpjūčio 1 d.
+                    </p>
+                    <p>
+                        Pieninė buvo garinė. Veikimo principas buvo kaip garvežio. Pradžioje buvo kūrenama durpėmis, todėl ir buvo bendrovės sprendimu įsigytas durpynas šalia Gelažių.
+                    </p>
+                    <p>
+                        Vėliau pereita prie kūrenimo anglimis, o dar vėliau elektra.
+                    </p>
+                    <p class="font-semibold text-brick pt-2 border-t border-cream-dark">
+                        1940 m. „Pienocentrui“ priklausė 179 pieninės ir 2 159 pieno nugriebimo punktai, kurie per metus perdirbdavo apie 500 mln. kg pieno.
+                    </p>
+                </div>
             </div>
 
             <div class="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-brick/25">
@@ -440,7 +493,7 @@
 
             <!-- Dviejų video tinklelis -->
             <div class="grid md:grid-cols-2 gap-8 items-start">
-                
+
                 <!-- 1 vaizdo įrašas: pOJVFdMGJHs -->
                 <div class="bg-white/5 p-4 sm:p-6 rounded-3xl border border-white/10 flex flex-col justify-between h-full">
                     <div>
@@ -698,8 +751,9 @@
         </div>
     </section>
 
-    <!-- Paprastas skriptas mobiliajam meniu -->
+    <!-- Skriptai: Mobilusis meniu ir išsami istorija -->
     <script>
+        // Mobilus meniu
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
         if (btn && menu) {
@@ -710,6 +764,27 @@
                 link.addEventListener('click', () => {
                     menu.classList.add('hidden');
                 });
+            });
+        }
+
+        // Išsamios istorijos mygtukas ir išskleidimas
+        const historyBtn = document.getElementById('toggle-full-history-btn');
+        const historyContent = document.getElementById('full-history-content');
+        const btnText = document.getElementById('toggle-btn-text');
+        const btnIcon = document.getElementById('toggle-btn-icon');
+
+        if (historyBtn && historyContent) {
+            historyBtn.addEventListener('click', () => {
+                const isHidden = historyContent.classList.contains('hidden');
+                if (isHidden) {
+                    historyContent.classList.remove('hidden');
+                    btnText.textContent = 'Suskleisti istoriją';
+                    btnIcon.classList.add('rotate-180');
+                } else {
+                    historyContent.classList.add('hidden');
+                    btnText.textContent = 'Skaityti išsamią istoriją';
+                    btnIcon.classList.remove('rotate-180');
+                }
             });
         }
     </script>
