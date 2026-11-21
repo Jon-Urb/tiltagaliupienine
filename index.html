@@ -63,7 +63,7 @@
                 <a href="#istorija" class="hover:text-brick transition">Istorija</a>
                 <a href="#architektura" class="hover:text-brick transition">Architektūra</a>
                 <a href="#video" class="hover:text-brick transition flex items-center gap-1.5 text-brick">
-                    <span>▶</span> Apybraiža
+                    <span>▶</span> Vaizdo įrašai
                 </a>
                 <a href="#galerija" class="hover:text-brick transition font-semibold">Archyvo nuotraukos</a>
                 <a href="#kontaktai" class="px-5 py-2.5 bg-brick text-white rounded-full hover:bg-brick-dark transition shadow-sm">Kontaktai</a>
@@ -84,7 +84,7 @@
                 <a href="#ziniasklaida" class="py-2 hover:text-brick">Žiniasklaida</a>
                 <a href="#istorija" class="py-2 hover:text-brick">Istorija</a>
                 <a href="#architektura" class="py-2 hover:text-brick">Architektūra</a>
-                <a href="#video" class="py-2 text-brick font-semibold">▶ Dokumentinė apybraiža</a>
+                <a href="#video" class="py-2 text-brick font-semibold">▶ Vaizdo įrašai</a>
                 <a href="#galerija" class="py-2 hover:text-brick font-semibold">Archyvo nuotraukos</a>
                 <a href="#kontaktai" class="py-2 text-brick font-semibold">Kontaktai ir vieta</a>
             </div>
@@ -427,34 +427,72 @@
         </div>
     </section>
 
-    <!-- Vaizdo apybraižos sekcija -->
+    <!-- Vaizdo apybraižų sekcija (2 vaizdo įrašai) -->
     <section id="video" class="py-20 bg-charcoal text-cream relative overflow-hidden">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-2xl mx-auto mb-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="text-brick-light font-semibold text-xs uppercase tracking-widest">Dokumentinė apybraiža</span>
                 <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-4">Pieninės atgimimo istorija ekrane</h2>
                 <p class="text-cream/80 text-sm sm:text-base">
-                    Pamatykite vaizdo pasakojimą apie pastato praeitį, „Pienocentro“ laikus ir kruopštų šio paveldo objekto išsaugojimo kelią.
+                    Pamatykite vaizdo pasakojimus apie pastato praeitį, „Pienocentro“ laikus ir kruopštų šio paveldo objekto išsaugojimo kelią.
                 </p>
             </div>
 
-            <!-- YouTube grotuvas -->
-            <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black aspect-video">
-                <iframe 
-                    class="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube-nocookie.com/embed/pOJVFdMGJHs?rel=0" 
-                    title="Tiltagalių pieninė - atgimusi istorija" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-            </div>
+            <!-- Dviejų video tinklelis -->
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                
+                <!-- 1 vaizdo įrašas: pOJVFdMGJHs -->
+                <div class="bg-white/5 p-4 sm:p-6 rounded-3xl border border-white/10 flex flex-col justify-between h-full">
+                    <div>
+                        <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black aspect-video mb-5">
+                            <iframe 
+                                class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube-nocookie.com/embed/pOJVFdMGJHs?rel=0" 
+                                title="Tiltagalių pieninė – atgimusi istorija" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-cream mb-2">Tiltagalių pieninė – atgimusi istorija</h3>
+                        <p class="text-xs sm:text-sm text-cream/70 leading-relaxed mb-4">
+                            Dokumentinis pasakojimas apie tarpukario garinės pieninės atstatymą, istorinę vertę ir memorialinės erdvės sukūrimą.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/10">
+                        <a href="https://www.youtube.com/watch?v=pOJVFdMGJHs" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs sm:text-sm text-brick-light hover:text-white underline transition">
+                            <span>Atidaryti YouTube platformoje</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
 
-            <div class="mt-8 text-center">
-                <a href="https://www.youtube.com/watch?v=pOJVFdMGJHs" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-cream/70 hover:text-white underline transition">
-                    <span>Atidaryti tiesiogiai YouTube platformoje</span>
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+                <!-- 2 vaizdo įrašas: FHFVqPRcbuM -->
+                <div class="bg-white/5 p-4 sm:p-6 rounded-3xl border border-white/10 flex flex-col justify-between h-full">
+                    <div>
+                        <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black aspect-video mb-5">
+                            <iframe 
+                                class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube-nocookie.com/embed/FHFVqPRcbuM?rel=0" 
+                                title="Tiltagalių pieninė – vaizdo apybraiža" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-cream mb-2">Tiltagalių pieninė – vaizdo reportažas</h3>
+                        <p class="text-xs sm:text-sm text-cream/70 leading-relaxed mb-4">
+                            Vaizdo pasakojimas ir kadrai iš atstatytos pieninės bei jos apylinkių.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/10">
+                        <a href="https://www.youtube.com/watch?v=FHFVqPRcbuM" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs sm:text-sm text-brick-light hover:text-white underline transition">
+                            <span>Atidaryti YouTube platformoje</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
