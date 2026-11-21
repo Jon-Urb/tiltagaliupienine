@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiltagalių pieninė | Istorinis paveldas, edukacijos ir sūrininkystė</title>
-    <meta name="description" content="Atkurta 1939–1940 m. tarpukario garinė pieninė Tiltagaliuose, Panevėžio rajone. Muziejus, sūrio gamybos edukacijos ir natūralūs pieno produktai.">
+    <meta name="description" content="Atkurta 1939–1940 m. tarpukario garinė pieninė Tiltagaliuose, Panevėžio rajone. Edukacinės programos, muziejus, video apybraiža ir natūralūs pieno produktai.">
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <script>
         tailwind.config = {
             theme: {
@@ -34,114 +41,170 @@
 </head>
 <body class="bg-cream text-charcoal font-sans antialiased">
 
-    <!-- Navigacija -->
-    <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-cream-dark">
+    <!-- Navigacijos juosta -->
+    <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-cream-dark transition-all">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-brick text-cream flex items-center justify-center font-serif font-bold text-xl">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-full bg-brick text-cream flex items-center justify-center font-serif font-bold text-xl shadow-md group-hover:bg-brick-dark transition">
                     T
                 </div>
                 <div>
                     <span class="font-serif font-bold text-xl tracking-tight block leading-none">Tiltagalių pieninė</span>
-                    <span class="text-xs text-brick font-medium tracking-widest uppercase">Įkurta 1936–1940 m.</span>
+                    <span class="text-[11px] text-brick font-semibold tracking-widest uppercase mt-1 block">Tarpukario paveldas • 1936–1940 m.</span>
                 </div>
             </a>
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+
+            <!-- Meniu kompiuteriams -->
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
                 <a href="#apie" class="hover:text-brick transition">Apie mus</a>
                 <a href="#istorija" class="hover:text-brick transition">Istorija</a>
-                <a href="#veikla" class="hover:text-brick transition">Produkcija ir edukacijos</a>
-                <a href="#kontaktai" class="px-5 py-2.5 bg-brick text-white rounded-full hover:bg-brick-dark transition">Susisiekti</a>
+                <a href="#video" class="hover:text-brick transition flex items-center gap-1.5 text-brick">
+                    <span>▶</span> Vaizdo įrašas
+                </a>
+                <a href="#galerija" class="hover:text-brick transition">Galerija</a>
+                <a href="#veikla" class="hover:text-brick transition">Veikla</a>
+                <a href="#kontaktai" class="px-5 py-2.5 bg-brick text-white rounded-full hover:bg-brick-dark transition shadow-sm">Kontaktai</a>
             </nav>
+
+            <!-- Mobiliojo meniu mygtukas -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-charcoal hover:bg-cream-dark/50" aria-label="Atidaryti meniu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Išskleidžiamas mobilus meniu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-6 bg-cream border-b border-cream-dark">
+            <div class="flex flex-col gap-3 font-medium text-sm">
+                <a href="#apie" class="py-2 hover:text-brick">Apie mus</a>
+                <a href="#istorija" class="py-2 hover:text-brick">Istorija</a>
+                <a href="#video" class="py-2 text-brick font-semibold">▶ Vaizdo pasakojimas</a>
+                <a href="#galerija" class="py-2 hover:text-brick">Galerija</a>
+                <a href="#veikla" class="py-2 hover:text-brick">Veikla</a>
+                <a href="#kontaktai" class="py-2 text-brick font-semibold">Kontaktai ir rekvizitai</a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero sekcija -->
-    <section class="relative overflow-hidden py-20 md:py-28 bg-gradient-to-b from-cream-dark/60 to-cream">
+    <!-- Hero pradžios sekcija -->
+    <section class="relative overflow-hidden py-20 md:py-28 bg-gradient-to-b from-cream-dark/50 to-cream">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="max-w-3xl">
                 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brick/10 text-brick text-xs font-semibold uppercase tracking-wider mb-6">
                     <span>Panevėžio r. • Tiltagalių k. • Žalioji g. 39</span>
                 </div>
-                <h1 class="font-serif text-4xl sm:text-6xl font-bold text-charcoal leading-tight mb-6">
-                    Atgimęs tarpukario Lietuvos pieno pramonės šedevras
+                <h1 class="font-serif text-4xl sm:text-6xl font-bold text-charcoal leading-[1.15] mb-6">
+                    Atgimęs tarpukario Lietuvos pieno pramonės perlas
                 </h1>
                 <p class="text-lg sm:text-xl text-charcoal/80 leading-relaxed mb-10">
-                    1939–1940 m. iškilusi raudonų plytų garinė Tiltagalių pieninė atveria duris iš naujo. Čia susitinka autentiška architekto Broniaus Elzbergo architektūra, gyva pieno perdirbimo istorija, edukacijos ir tikrų kaimiškų sūrių gamyba.
+                    1939–1940 m. iškilusi raudonų plytų garinė Tiltagalių pieninė atveria duris iš naujo. Čia susitinka autentiška architekto Broniaus Elzbergo architektūra, gyva tarpukario „Pienocentro“ istorija, edukacijos ir tradicinė sūrininkystė.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="#kontaktai" class="px-7 py-4 bg-brick text-white font-semibold rounded-full hover:bg-brick-dark transition shadow-lg shadow-brick/20">
-                        Registruotis į edukaciją
+                    <a href="#video" class="px-8 py-4 bg-brick text-white font-semibold rounded-full hover:bg-brick-dark transition shadow-lg shadow-brick/20 flex items-center gap-2">
+                        <span>Žiūrėti video apybraižą</span>
+                        <span class="text-xs">▶</span>
                     </a>
-                    <a href="#istorija" class="px-7 py-4 bg-white text-charcoal font-semibold rounded-full border border-charcoal/15 hover:border-brick hover:text-brick transition">
-                        Tyrinėti pieninės istoriją
+                    <a href="#istorija" class="px-8 py-4 bg-white text-charcoal font-semibold rounded-full border border-charcoal/15 hover:border-brick hover:text-brick transition">
+                        Tyrinėti istoriją
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Apie projektą / Atgimimas -->
+    <!-- Apie mus ir paveldo atgimimas -->
     <section id="apie" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-12 gap-12 items-center">
                 <div class="md:col-span-7">
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-6">Nuo istorinio pastato iki gyvos bendruomenės erdvės</h2>
+                    <span class="text-brick font-semibold text-xs uppercase tracking-widest">Naujas gyvenimas</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-6">Nuo apleisto pastato iki gyvos bendruomenės ir edukacijų šerdies</h2>
                     <p class="text-charcoal/80 leading-relaxed mb-4">
-                        <strong>Tiltagalių pieninė</strong> – tai atkurta tarpukario laikų garinė pieninė Tiltagalių kaime, Panevėžio rajone, kurią naujam gyvenimui prikėlė iš šio krašto kilęs entuziastas <strong>Gintaras Urbonas</strong> kartu su sūnumi <strong>Jonu Urbonu</strong>.
+                        <strong>Tiltagalių pieninė</strong> – tai atkurta tarpukario garinė pieninė Panevėžio rajone, kurią naujam gyvenimui prikėlė iš šio krašto kilęs entuziastas <strong>Gintaras Urbonas</strong> kartu su sūnumi <strong>Jonu Urbonu</strong>.
                     </p>
                     <p class="text-charcoal/80 leading-relaxed mb-6">
-                        Kadaise šis įspūdingas raudonų plytų pastatas su rozetės formos skliautų langais buvo vienas iš nedaugelio mūrinių statinių apylinkėse ir veikė ne tik kaip pieno perdirbimo centras, bet ir kaip kaimo bendruomenės susibūrimų vieta. Šiandien kruopščiai išsaugotas pastatas virsta veikiančia edukacine ir gamybine erdve.
+                        Kadaise šis įspūdingas raudonų plytų statinys su apskritais rozetės formos langais buvo vienas iš nedaugelio mūrinių pastatų apylinkėse. Jis veikė ne tik kaip pieno perdirbimo vieta, bet ir kaip kaimo bendruomenės susibūrimų ašis. Šiandien atkurta pieninė virsta muziejumi, edukacine bei amatininkiškos gamybos erdve.
                     </p>
-                    <div class="grid sm:grid-cols-3 gap-6 pt-4 border-t border-cream-dark">
+
+                    <div class="grid sm:grid-cols-3 gap-6 pt-6 border-t border-cream-dark">
                         <div>
                             <div class="font-serif text-3xl font-bold text-brick">1936 m.</div>
-                            <div class="text-sm text-charcoal/70 mt-1">Priimtas sprendimas statyti garinę pieninę</div>
+                            <div class="text-xs text-charcoal/70 mt-1">„Galybės“ nutarimas statyti pieninę</div>
                         </div>
                         <div>
                             <div class="font-serif text-3xl font-bold text-brick">32 m</div>
-                            <div class="text-sm text-charcoal/70 mt-1">Istorinis artezinis šulinys tyram vandeniui</div>
+                            <div class="text-xs text-charcoal/70 mt-1">Artezinis šulinys švariam vandeniui</div>
                         </div>
                         <div>
                             <div class="font-serif text-3xl font-bold text-brick">100 %</div>
-                            <div class="text-sm text-charcoal/70 mt-1">Išsaugota autentiška tarpukario architektūra</div>
+                            <div class="text-xs text-charcoal/70 mt-1">Išsaugoti autentiški fasado bruožai</div>
                         </div>
                     </div>
                 </div>
-                <div class="md:col-span-5 bg-cream p-8 rounded-2xl border border-cream-dark">
-                    <h3 class="font-serif text-2xl font-bold mb-4 text-brick">Mūsų misija</h3>
-                    <ul class="space-y-4 text-sm sm:text-base text-charcoal/85">
-                        <li class="flex gap-3">
-                            <span class="text-brick font-bold">✦</span>
-                            <span><strong>Kultūros paveldo išsaugojimas:</strong> pristatyti tarpukario Lietuvos „Pienocentro“ architektūrą ir pramonės istoriją.</span>
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="text-brick font-bold">✦</span>
-                            <span><strong>Gyva edukacija:</strong> supažindinti lankytojus su tradicine pieno apdirbimo ir sūrių spaudimo technologija.</span>
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="text-brick font-bold">✦</span>
-                            <span><strong>Vietos ekonomika ir bendruomenė:</strong> kurti darbo vietas Panevėžio rajono jaunimui ir mažinti atskirtį tarp miesto bei kaimo.</span>
-                        </li>
-                    </ul>
+
+                <div class="md:col-span-5">
+                    <!-- Fono rėmelis su pagrindine fasado nuotrauka -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-cream-dark group">
+                        <img src="images/fasadas-plytos.jpg" alt="Tiltagalių pieninės raudonų plytų fasadas ir arkiniai langai" class="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80';">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent flex items-end p-6">
+                            <div class="text-white">
+                                <span class="text-xs uppercase tracking-wider text-brick-light font-bold block">Autentiška architektūra</span>
+                                <span class="font-serif text-lg font-semibold">1939 m. B. Elzbergo raudonų plytų mūras</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Istorijos laiko juosta -->
+    <!-- Vaizdo įrašo (YouTube) sekcija -->
+    <section id="video" class="py-20 bg-charcoal text-cream relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-brick-light font-semibold text-xs uppercase tracking-widest">Dokumentinė apybraiža</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-4">Pieninės atgimimo istorija ekrane</h2>
+                <p class="text-cream/80 text-sm sm:text-base">
+                    Pamatykite, kaip istorinis tarpukario pastatas atgyja naujam gyvenimui, pasakojimus apie „Pienocentro“ laikus ir Urbonų šeimos puoselėjamą viziją.
+                </p>
+            </div>
+
+            <!-- YouTube grotuvas -->
+            <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black aspect-video">
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube-nocookie.com/embed/pOJVFdMGJHs?rel=0" 
+                    title="Tiltagalių pieninė - atgimusi istorija" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="mt-8 text-center">
+                <a href="https://www.youtube.com/watch?v=pOJVFdMGJHs" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-cream/70 hover:text-white underline transition">
+                    <span>Atidaryti tiesiogiai YouTube platformoje</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Istorinė laiko juosta -->
     <section id="istorija" class="py-20 bg-cream">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-brick font-semibold text-xs uppercase tracking-widest">Archyviniai faktai</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-4">Tiltagalių pieninės istorija</h2>
+                <span class="text-brick font-semibold text-xs uppercase tracking-widest">Archyviniai dokumentai</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-4">Tiltagalių pieninės istorijos kelias</h2>
                 <p class="text-charcoal/75">
-                    Nuo medinės pieninės su ežero ledo rietuvėmis iki modernios tarpukario garinės pieninės prie Marnakos upelio.
+                    Nuo medinės pieninės su ežero ledo rietuvėmis iki moderniausios tarpukario garinės pieninės prie Marnakos upelio.
                 </p>
             </div>
 
             <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-brick/25">
-                
-                <!-- 1 etapas -->
+
+                <!-- 1 žingsnis -->
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cream bg-brick text-white font-bold text-xs shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                         1
@@ -150,63 +213,63 @@
                         <span class="text-xs font-bold text-brick uppercase">Iki 1936 m.</span>
                         <h3 class="font-serif text-xl font-bold mt-1 mb-2">Pirmosios pieninės ir ežero ledai</h3>
                         <p class="text-sm text-charcoal/80 leading-relaxed">
-                            Pirmoji apylinkių pieninė veikė Kiaulėno dvare Paežeriuose, o antroji – medinė – kaimo pradžioje prie sankryžos. Neturint elektros ir šaldytuvų, grietinei atšaldyti žiemą iš ežero pjaudavo ledus, kraudavo į rietuves, apipildavo pjuvenomis ir naudodavo visą vasarą, o separatorių sukdavo rankomis.
+                            Pirmoji pieninė apylinkėse buvo Kiaulėno dvare Paežeriuose, o antroji – medinė kaimo pradžioje. Grietinei atvėsinti žiemą iš ežero pjaudavo ledus, kraudavo į rietuves ir apipildavo pjuvenomis, o separatorių sukdavo rankomis.
                         </p>
                     </div>
                 </div>
 
-                <!-- 2 etapas -->
+                <!-- 2 žingsnis -->
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cream bg-brick text-white font-bold text-xs shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                         2
                     </div>
                     <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl shadow-sm border border-cream-dark">
                         <span class="text-xs font-bold text-brick uppercase">1936 m. lapkričio 21 d. – 1937 m.</span>
-                        <h3 class="font-serif text-xl font-bold mt-1 mb-2">Bendrovės „Galybė“ sprendimas ir sklypo įsigijimas</h3>
+                        <h3 class="font-serif text-xl font-bold mt-1 mb-2">„Galybės“ bendrovės nutarimas ir sklypas</h3>
                         <p class="text-sm text-charcoal/80 leading-relaxed">
-                            Tiltagalių pieno perdirbimo bendrovės „Galybė“ visuotinis susirinkimas ir valdybos nariai Vincas Breivė, Povilas Balčikonis bei Jonas Meiliūnas nutarė statyti garinę pieninę. Dėl patogesnio nuotekų nuvedimo į Marnakos upelį pasirinkta nauja vieta – 1937 m. gegužės 15 d. už 1 500 Lt išpirktas sklypas iš Antano Morkūno.
+                            Pieno perdirbimo bendrovės „Galybė“ valdybos nariai Vincas Breivė, Povilas Balčikonis ir Jonas Meiliūnas nutarė statyti garinę pieninę. 1937 m. gegužės 15 d. už 1 500 Lt iš Antano Morkūno išpirktas žemės sklypas prie Marnakos upelio.
                         </p>
                     </div>
                 </div>
 
-                <!-- 3 etapas -->
+                <!-- 3 žingsnis -->
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cream bg-brick text-white font-bold text-xs shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                         3
                     </div>
                     <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl shadow-sm border border-cream-dark">
                         <span class="text-xs font-bold text-brick uppercase">1937–1938 m.</span>
-                        <h3 class="font-serif text-xl font-bold mt-1 mb-2">Belgiškos architektūros braižas ir artezinis šulinys</h3>
+                        <h3 class="font-serif text-xl font-bold mt-1 mb-2">Belgiškas projektas ir artezinis šulinys</h3>
                         <p class="text-sm text-charcoal/80 leading-relaxed">
-                            Iš dviejų „Pienocentro“ pasiūlytų projektų pasirinktas Belgijoje mokslus baigusio architekto <strong>Broniaus Elzbergo</strong> ir inžinieriaus <strong>Telesforo Prijalgausko</strong> projektas Nr. 1036 (sąmata – 75 000 Lt). Pastatui būdingi vokiečių ir belgų architektūros bruožai: raudonos plytos ir apvalūs rozetės formos langai. Pirmiausia iškastas 32 metrų gylio artezinis šulinys.
+                            Pasirinktas Belgijoje studijavusio architekto Broniaus Elzbergo ir inžinieriaus Telesforo Prijalgausko projektas Nr. 1036 (sąmata – 75 000 Lt). Pastatui būdingi raudoni mūrai ir apvalūs langai. Iškastas 32 m gylio artezinis šulinys.
                         </p>
                     </div>
                 </div>
 
-                <!-- 4 etapas -->
+                <!-- 4 žingsnis -->
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cream bg-brick text-white font-bold text-xs shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                         4
                     </div>
                     <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl shadow-sm border border-cream-dark">
-                        <span class="text-xs font-bold text-brick uppercase">1938 m. lapkritis – 1940 m. rugpjūčio 1 d.</span>
-                        <h3 class="font-serif text-xl font-bold mt-1 mb-2">Statybos ir garvežio principu veikusi pieninė</h3>
+                        <span class="text-xs font-bold text-brick uppercase">1938–1940 m. rugpjūčio 1 d.</span>
+                        <h3 class="font-serif text-xl font-bold mt-1 mb-2">Garinės pieninės statyba</h3>
                         <p class="text-sm text-charcoal/80 leading-relaxed">
-                            Antrąjį statybos konkursą 1938 m. lapkričio 8 d. laimėjo rangovas Petras Čekavičius (už 83 000 Lt). Statybos užbaigtos 1940 m. rugpjūčio 1 d. Pieninė veikė garo principu: iš pradžių katilas buvo kūrenamas durpėmis iš specialiai įsigyto durpyno šalia Gelažių, vėliau – anglimis, o galiausiai pritaikyta elektra.
+                            Rangovas Petras Čekavičius baigė statybas 1940 m. rugpjūtį. Pieninė veikė garvežio principu: pradžioje katilas buvo kūrenamas durpėmis iš Gelažių durpyno, vėliau – anglimis, o dar vėliau pritaikyta elektra.
                         </p>
                     </div>
                 </div>
 
-                <!-- 5 etapas -->
+                <!-- 5 žingsnis -->
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cream bg-brick text-white font-bold text-xs shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                         5
                     </div>
                     <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl shadow-sm border border-cream-dark">
                         <span class="text-xs font-bold text-brick uppercase">2025–2026 m.</span>
-                        <h3 class="font-serif text-xl font-bold mt-1 mb-2">MB „Tiltagalių pieninė“ ir Sumanus kaimas</h3>
+                        <h3 class="font-serif text-xl font-bold mt-1 mb-2">Atgimimas: MB „Tiltagalių pieninė“</h3>
                         <p class="text-sm text-charcoal/80 leading-relaxed">
-                            Sutvarkius autentišką pastato išorę, 2025 m. lapkričio 17 d. įsteigta <strong>MB „Tiltagalių pieninė“</strong>. Pieninė atgimsta kaip muziejus, edukacinė erdvė ir smulkus pieno perdirbimo vienetas.
+                            Sutvarkius pastato išorę, įsteigta MB „Tiltagalių pieninė“. Pieninė pradedama naudoti kaip edukacinė erdvė, paveldo muziejus ir amatininkiškų sūrių gamybos vieta.
                         </p>
                     </div>
                 </div>
@@ -215,52 +278,115 @@
         </div>
     </section>
 
-    <!-- Veiklos ir paslaugos -->
-    <section id="veikla" class="py-20 bg-white">
+    <!-- Archyvinių nuotraukų galerija -->
+    <section id="galerija" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-brick font-semibold text-xs uppercase tracking-widest">Ką mes kuriame</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-4">Veiklos kryptys ir patirtys</h2>
+                <span class="text-brick font-semibold text-xs uppercase tracking-widest">Fotogalerija</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-4">Autentiški kadrai ir brėžiniai</h2>
                 <p class="text-charcoal/75">
-                    Sujungiame paveldo pažinimą, tradicinius amatus ir tikrą kaimišką skonį.
+                    Atrinkti istoriniai brėžiniai bei atkurtos pieninės architektūrinės detalės iš mūsų archyvo.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 1 nuotrauka: Brėžiniai -->
+                <div class="bg-cream rounded-xl overflow-hidden border border-cream-dark shadow-sm group">
+                    <div class="h-56 overflow-hidden bg-cream-dark/40 relative">
+                        <img src="images/projektas-1937.jpg" alt="1937 m. architekto B. Elzbergo brėžiniai" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=600&q=80';">
+                        <span class="absolute top-3 left-3 bg-brick text-white text-[10px] uppercase font-bold px-2 py-1 rounded">Archyvas</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-serif font-bold text-base mb-1">1937 m. B. Elzbergo projektas</h3>
+                        <p class="text-xs text-charcoal/70">Išlikę originalūs „Galybės“ pieninės brėžiniai ir fasado pjūviai.</p>
+                    </div>
+                </div>
+
+                <!-- 2 nuotrauka: Fasadas -->
+                <div class="bg-cream rounded-xl overflow-hidden border border-cream-dark shadow-sm group">
+                    <div class="h-56 overflow-hidden bg-cream-dark/40 relative">
+                        <img src="images/fasadas-plytos.jpg" alt="Raudonų plytų fasadas ir arkiniai langai" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80';">
+                        <span class="absolute top-3 left-3 bg-charcoal text-white text-[10px] uppercase font-bold px-2 py-1 rounded">Išorė</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-serif font-bold text-base mb-1">Raudonų plytų mūras</h3>
+                        <p class="text-xs text-charcoal/70">Belgiško stiliaus įkvėptas fasadas su arkinėmis langų rozetėmis.</p>
+                    </div>
+                </div>
+
+                <!-- 3 nuotrauka: Vidaus erdvės -->
+                <div class="bg-cream rounded-xl overflow-hidden border border-cream-dark shadow-sm group">
+                    <div class="h-56 overflow-hidden bg-cream-dark/40 relative">
+                        <img src="images/erdves-vidus.jpg" alt="Tiltagalių pieninės vidaus erdvės" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?auto=format&fit=crop&w=600&q=80';">
+                        <span class="absolute top-3 left-3 bg-brick text-white text-[10px] uppercase font-bold px-2 py-1 rounded">Vidus</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-serif font-bold text-base mb-1">Gamybinės ir edukacijų erdvės</h3>
+                        <p class="text-xs text-charcoal/70">Erdvūs pastato skliautai, pritaikomi muziejui ir demonstracinei gamybai.</p>
+                    </div>
+                </div>
+
+                <!-- 4 nuotrauka: Detalės -->
+                <div class="bg-cream rounded-xl overflow-hidden border border-cream-dark shadow-sm group">
+                    <div class="h-56 overflow-hidden bg-cream-dark/40 relative">
+                        <img src="images/detales-arka.jpg" alt="Mūro arkos ir langų apvadai" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=600&q=80';">
+                        <span class="absolute top-3 left-3 bg-charcoal text-white text-[10px] uppercase font-bold px-2 py-1 rounded">Detalės</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-serif font-bold text-base mb-1">Mūro meistriškumas</h3>
+                        <p class="text-xs text-charcoal/70">Kruopščiai išsaugotos tarpukario mūrininkų darbo detalės ir sąramos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Veiklos kryptys -->
+    <section id="veikla" class="py-20 bg-cream">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brick font-semibold text-xs uppercase tracking-widest">Patirtys ir produktai</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-4">Ką veikiame Tiltagaliuose?</h2>
+                <p class="text-charcoal/75">
+                    Sujungiame autentiško paveldo pažinimą, tradicinius amatus ir natūralų kaimo skonį.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Kortelė 1 -->
-                <div class="bg-cream p-8 rounded-2xl border border-cream-dark flex flex-col justify-between">
+                <!-- 1 kortelė -->
+                <div class="bg-white p-8 rounded-2xl border border-cream-dark shadow-sm flex flex-col justify-between">
                     <div>
-                        <div class="text-3xl mb-4">🧀</div>
-                        <h3 class="font-serif text-2xl font-bold mb-3">Pieno produktų gamyba</h3>
+                        <div class="w-12 h-12 rounded-xl bg-brick/10 text-brick flex items-center justify-center text-2xl mb-6">🧀</div>
+                        <h3 class="font-serif text-2xl font-bold mb-3">Sūrininkystė</h3>
                         <p class="text-charcoal/80 text-sm leading-relaxed mb-6">
-                            Demonstracinė ir komercinė amatininkiškų sūrių bei kitų pieno produktų gamyba. Naudojame vietos ūkių pieną ir laiko patikrintas receptūras.
+                            Demonstracinė ir komercinė amatininkiškų sūrių gamyba. Naudojame šviežią vietos ūkių pieną, laikomės tradicinių receptūrų ir kviečiame degustuoti vietoje.
                         </p>
                     </div>
-                    <span class="text-xs font-semibold text-brick uppercase tracking-wider">Ragaukite ir įsigykite vietoje</span>
+                    <span class="text-xs font-semibold text-brick uppercase tracking-wider">Tradicinis skonis</span>
                 </div>
 
-                <!-- Kortelė 2 -->
-                <div class="bg-cream p-8 rounded-2xl border border-cream-dark flex flex-col justify-between">
+                <!-- 2 kortelė -->
+                <div class="bg-white p-8 rounded-2xl border border-cream-dark shadow-sm flex flex-col justify-between">
                     <div>
-                        <div class="text-3xl mb-4">🏛️</div>
+                        <div class="w-12 h-12 rounded-xl bg-brick/10 text-brick flex items-center justify-center text-2xl mb-6">🏛️</div>
                         <h3 class="font-serif text-2xl font-bold mb-3">Muziejus ir edukacijos</h3>
                         <p class="text-charcoal/80 text-sm leading-relaxed mb-6">
-                            Ekskursijos po 1939–1940 m. pieninės pastatą, pažintis su „Pienocentro“ istorija, tarpukario įranga bei praktinės sūrio spaudimo edukacijos šeimoms, moksleiviams ir kolektyvams.
+                            Ekskursijos po 1939–1940 m. pieninės pastatą, pažintis su „Pienocentro“ istorija, tarpukario technika bei praktinės sūrio spaudimo edukacijos moksleiviams ir grupėms.
                         </p>
                     </div>
-                    <span class="text-xs font-semibold text-brick uppercase tracking-wider">Būtina išankstinė registracija</span>
+                    <span class="text-xs font-semibold text-brick uppercase tracking-wider">Gyva istorija</span>
                 </div>
 
-                <!-- Kortelė 3 -->
-                <div class="bg-cream p-8 rounded-2xl border border-cream-dark flex flex-col justify-between">
+                <!-- 3 kortelė -->
+                <div class="bg-white p-8 rounded-2xl border border-cream-dark shadow-sm flex flex-col justify-between">
                     <div>
-                        <div class="text-3xl mb-4">🍯</div>
+                        <div class="w-12 h-12 rounded-xl bg-brick/10 text-brick flex items-center justify-center text-2xl mb-6">🍯</div>
                         <h3 class="font-serif text-2xl font-bold mb-3">Bitininkystė ir poilsis</h3>
                         <p class="text-charcoal/80 text-sm leading-relaxed mb-6">
-                            Šalia plėtojama bitininkystė, kultūros paveldo iniciatyvos ir trumpalaikio poilsio bei bendruomenės susibūrimų erdvė vaizdingose Tiltagalių apylinkėse.
+                            Plėtojama bitininkystė, kultūros paveldo iniciatyvos ir rami bendruomenės bei poilsiautojų susibūrimų erdvė šalia vaizdingo Marnakos upelio.
                         </p>
                     </div>
-                    <span class="text-xs font-semibold text-brick uppercase tracking-wider">Gamtos ir istorijos harmonija</span>
+                    <span class="text-xs font-semibold text-brick uppercase tracking-wider">Gamtos dermė</span>
                 </div>
             </div>
         </div>
@@ -269,18 +395,18 @@
     <!-- Kontaktai ir rekvizitai -->
     <section id="kontaktai" class="py-20 bg-charcoal text-cream">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
                 <div>
-                    <span class="text-brick-light font-semibold text-xs uppercase tracking-widest">Atvykite į svečius</span>
+                    <span class="text-brick-light font-semibold text-xs uppercase tracking-widest">Laukiame jūsų</span>
                     <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-6">Susisiekime</h2>
                     <p class="text-cream/80 mb-8 leading-relaxed">
-                        Norite užsisakyti pažintinę ekskursiją, edukacinę programą, įsigyti produkcijos ar prisidėti prie Tiltagalių pieninės istorinio archyvo pildymo? Susisiekite su mumis!
+                        Norite užsisakyti edukaciją, įsigyti gaminamos produkcijos ar pasidalinti istoriniais prisiminimais apie Tiltagalių pieninę? Maloniai kviečiame kreiptis!
                     </p>
-                    
+
                     <div class="space-y-4 text-sm sm:text-base">
                         <p class="flex items-start gap-3">
                             <span class="text-brick-light font-bold">📍</span>
-                            <span><strong>Adresas:</strong> Žalioji g. 39, Tiltagalių k., Karsakiškio sen., Panevėžio r. sav., LT-38474 (šalia kelio Subačius–Karsakiškis)</span>
+                            <span><strong>Adresas:</strong> Žalioji g. 39, Tiltagalių k., Karsakiškio sen., Panevėžio r. sav., LT-38474</span>
                         </p>
                         <p class="flex items-center gap-3">
                             <span class="text-brick-light font-bold">📞</span>
@@ -293,20 +419,21 @@
                     </div>
                 </div>
 
-                <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
-                    <h3 class="font-serif text-2xl font-bold mb-4">Įmonės rekvizitai</h3>
+                <!-- Rekvizitų kortelė -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 shadow-lg">
+                    <h3 class="font-serif text-2xl font-bold mb-4">Juridiniai rekvizitai</h3>
                     <dl class="space-y-3 text-sm text-cream/85">
                         <div class="flex justify-between py-2 border-b border-white/10">
                             <dt class="text-cream/60">Pavadinimas:</dt>
                             <dd class="font-semibold">MB „Tiltagalių pieninė“</dd>
                         </div>
                         <div class="flex justify-between py-2 border-b border-white/10">
-                            <dt class="text-cream/60">Juridinio asmens kodas:</dt>
+                            <dt class="text-cream/60">Įmonės kodas:</dt>
                             <dd class="font-semibold">307498930</dd>
                         </div>
                         <div class="flex justify-between py-2 border-b border-white/10">
-                            <dt class="text-cream/60">Buveinės adresas:</dt>
-                            <dd class="font-semibold text-right">Žalioji g. 39, Tiltagalių k.,<br>Karsakiškio sen., Panevėžio r.</dd>
+                            <dt class="text-cream/60">Buveinė:</dt>
+                            <dd class="font-semibold text-right">Žalioji g. 39, Tiltagalių k.,<br>Panevėžio r. sav.</dd>
                         </div>
                         <div class="flex justify-between py-2 border-b border-white/10">
                             <dt class="text-cream/60">Įregistravimo data:</dt>
@@ -322,10 +449,20 @@
 
             <div class="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-cream/50">
                 <p>© 2026 MB „Tiltagalių pieninė“. Visos teisės saugomos.</p>
-                <p class="mt-2 sm:mt-0">www.tiltagaliupienine.lt</p>
+                <p class="mt-2 sm:mt-0 font-medium">www.tiltagaliupienine.lt</p>
             </div>
         </div>
     </section>
 
+    <!-- Paprastas mobiliojo meniu atidarymo skriptas -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    </script>
 </body>
 </html>
